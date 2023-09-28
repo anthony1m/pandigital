@@ -11,7 +11,7 @@ const isPandigital = (inputDigits) => {
       //.size la2ano l set btekhod unique digits w .length la2ano size taba3 l array that we inputted fa bt chouf eza fi duplicate numbers 
     uniqueDigits.size === inputDigits.length &&
     //.from kermel terja3 la array wl .every kermel kermel tchayek kell digit la wahdo eza akbar mn 0 w azghar mn 9 
-    Array.from(uniqueDigits).every((digit) => digit >= 0 && digit <= 9)
+    inputDigits.every((digit) => digit >= 0 && digit <= 9)
   );
 };
 

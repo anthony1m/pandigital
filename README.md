@@ -1,2 +1,0 @@
-# pandigital
-pandigital game
