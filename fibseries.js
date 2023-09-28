@@ -7,7 +7,7 @@ const rl = readline.createInterface({
 
 
 rl.question("Input a random number to get its Fib : ", (n) => {
-
+const series=[];
   const memorise={};
   const Fib = (n) => {
     if (n == 1 || n== 0) {
@@ -23,8 +23,16 @@ rl.question("Input a random number to get its Fib : ", (n) => {
       memorise[n]= result 
      
       return memorise[n];
+
+      
     }
   };
+  for (let i = 0; i <= n; i++) {
+    series.push(Fib(i));
+    console.log(`Fibo of ${i} is ${Fib(i)}`)
+
+  }
+// console.log(`Fibo of ${n}is ${series}`)
 
   console.log(`the fib numb of ${n} is ${Fib(n)}`)
 
